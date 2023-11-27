@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SiexFakeService } from 'pv.business/siex'
+import { SiexFacade } from 'pv.business/siex'
 
 @Component({
   selector: 'app-root',
@@ -10,7 +10,8 @@ import { SiexFakeService } from 'pv.business/siex'
 export class AppComponent {
   title = 'test-app';
 
-  constructor(siex:SiexFakeService) {
-    siex.test();
+  constructor(siex:SiexFacade) {
+    siex.getAllFollowUp().subscribe((f) => console.log('KKKKKKKKK', f))
+
   }
 }
