@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { SiexFakeService } from './siex-fake.service';
+import { SiexClient } from './siex.client';
 
-describe('SiexFakeService', () => {
-  let service: SiexFakeService;
+describe('SiexService', () => {
+  let service: SiexClient;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(SiexFakeService);
+    service = TestBed.inject(SiexClient);
   });
 
   it('should be created', () => {
