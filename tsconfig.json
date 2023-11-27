@@ -16,6 +16,14 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
+    "paths": {
+      "pv.business/*": [
+        "projects/pv.business/*",
+      ],
+      "pv.business": [
+        "projects/pv.business",
+      ]
+    },
     "target": "ES2022",
     "module": "ES2022",
     "useDefineForClassFields": false,
