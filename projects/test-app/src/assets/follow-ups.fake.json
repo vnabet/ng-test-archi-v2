@@ -1,0 +1,64 @@
+[
+  {
+    "id": "4184",
+    "depositDate": "2023-07-10T12:55:45.96Z",
+    "updateDate": "2023-07-10T12:57:01.51Z",
+    "state": "PENDIENTE DE PROCESAR",
+    "details": [],
+    "farmAndIncumbentCIFs": [
+      {
+        "farmCIF": "079261507B",
+        "incumbentCIF": "hthth"
+      }
+    ],
+    "applicantLastName": "FERNANDEZ",
+    "applicantFirstName": "Laura",
+    "managementUnit": "greijgir",
+    "autonomousCommunityLabel": "Andalucía"
+  },
+  {
+    "id": "4057",
+    "depositDate": "2023-07-09T13:09:09.93Z",
+    "updateDate": "2023-07-10T08:35:47.12Z",
+    "state": "PARCIAL",
+    "details": [
+      {
+        "code": "14",
+        "detail": "No se importa la actividad Cosecha / Recolección / Siega porque para el código Rea: ES010000021054 con fecha de inicio: 12/06/2023, la referencia al recinto sigpac: 07-1-0-0-1-1-1 no es válida",
+        "meaning": "L'activité que vous essayez de modifier est fermée ou envoyée à SIEX"
+      },
+      {
+        "code": "7",
+        "detail": "No se importa la actividad Cosecha / Recolección / Siega, porque para el código Rea: ES010000021054 el IdCosecha: 543 no es válido",
+        "meaning": "Le code du conseiller, il n'a pas été possible de le localiser dans le SW ROPO"
+      }
+    ],
+    "farmAndIncumbentCIFs": [
+      {
+        "farmCIF": "079261507B",
+        "incumbentCIF": "hthth"
+      }
+    ],
+    "applicantLastName": "FERNANDEZ",
+    "applicantFirstName": "Laura",
+    "managementUnit": "greijgir",
+    "autonomousCommunityLabel": "Andalucía"
+  },
+  {
+    "id": "3093",
+    "depositDate": "2023-07-06T17:49:31.58Z",
+    "updateDate": "2023-07-07T15:07:19.15Z",
+    "state": "PARCIAL",
+    "details": [],
+    "farmAndIncumbentCIFs": [
+      {
+        "farmCIF": "079261507B",
+        "incumbentCIF": "hthth"
+      }
+    ],
+    "applicantLastName": "FERNANDEZ",
+    "applicantFirstName": "Laura",
+    "managementUnit": "greijgir",
+    "autonomousCommunityLabel": "Andalucía"
+  }
+]

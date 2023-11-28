@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { SiexFacade } from 'pv.business/siex'
+import { UserFacade } from 'pv.business/user';
 
 @Component({
   selector: 'app-root',
@@ -10,8 +11,9 @@ import { SiexFacade } from 'pv.business/siex'
 export class AppComponent {
   title = 'test-app';
 
-  constructor(siex:SiexFacade) {
-    siex.getAllFollowUp().subscribe((f) => console.log('KKKKKKKKK', f))
+  constructor(siex:SiexFacade, user:UserFacade) {
+    siex.allFollowUp$.subscribe((f) => console.log('KKKKKKKKK', f));
 
+    console.log(`user: ${user.test()}`);
   }
 }

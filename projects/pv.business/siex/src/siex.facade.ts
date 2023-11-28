@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, inject } from '@angular/core';
 import { Observable } from 'rxjs';
 import { FollowUp } from './models';
 import { SiexClientGateway } from './gateways';
@@ -8,15 +8,10 @@ import { SiexClientGateway } from './gateways';
 })
 export class SiexFacade {
 
-  constructor(private client:SiexClientGateway) {
-
-  }
+  private client:SiexClientGateway = inject(SiexClientGateway);
 
   /**
-   * Récupère les données de suivi des dossier SIEX
-   * @returns tableau de données de suivi
+   * Données de suivi des dossier SIEX
    */
-  public getAllFollowUp(): Observable<FollowUp[]> {
-    return this.client.getAllFollowUp();
-  }
+  public allFollowUp$: Observable<FollowUp[]> = this.client.getAllFollowUp();
 }
