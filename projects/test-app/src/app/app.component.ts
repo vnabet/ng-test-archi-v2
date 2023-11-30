@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { SiexFacade } from 'pv.business/siex'
 import { UserFacade } from 'pv.business/user';
 
@@ -12,8 +12,11 @@ export class AppComponent {
   title = 'test-app';
 
   constructor(siex:SiexFacade, user:UserFacade) {
-    siex.allFollowUp$.subscribe((f) => console.log('KKKKKKKKK', f));
+    siex.followUps$.subscribe((f) => console.log('KKKKKKKKK', f));
 
     console.log(`user: ${user.test()}`);
+
+    window.setTimeout(() => siex.getAllFollowUp(), 2000);
   }
+
 }
